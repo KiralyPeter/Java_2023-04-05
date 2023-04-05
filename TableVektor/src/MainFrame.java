@@ -119,6 +119,7 @@ public class MainFrame extends JFrame implements ActionListener{
         
     }
 
+    // ez a VCode rakta bele, nem biztos, hogy kell a működéshez...
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
