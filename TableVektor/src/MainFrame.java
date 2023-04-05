@@ -75,7 +75,7 @@ public class MainFrame extends JFrame implements ActionListener{
         this.add(jsp);
 
         button.addActionListener(new ActionListener() {
-
+            
             public void actionPerformed(ActionEvent event){
 
                 getProperties();
@@ -117,5 +117,11 @@ public class MainFrame extends JFrame implements ActionListener{
             dft.addRow(newRow);
         }
         
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
 }
