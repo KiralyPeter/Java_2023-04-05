@@ -81,6 +81,7 @@ public class MainFrame extends JFrame implements ActionListener{
                 getProperties();
                 getSelectedData();
                 setData();
+                addRows();
                 
 
             }
@@ -104,5 +105,17 @@ public class MainFrame extends JFrame implements ActionListener{
 
     private void setData(){
         table.setValueAt("Módosítva", 0, 0);
+    }
+
+    private void addRows(){
+        Vector<String> newRow = new Vector<>();
+        newRow.add("New01");
+        newRow.add("New02");
+        newRow.add("New03");
+
+        for(int i = 0; i < 5; i++){
+            dft.addRow(newRow);
+        }
+        
     }
 }
